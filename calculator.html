@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Price Calculator</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+    <!-- Main Container -->
+    <div class="container py-5">
+
+        <div class="card shadow-lg border-0 rounded-4 mx-auto"
+             style="max-width: 650px;">
+
+            <!-- Header -->
+            <div class="card-header bg-primary text-white text-center py-4 rounded-top-4">
+
+                <h2 class="fw-bold mb-2">🧮 Calculator Results</h2>
+
+                <p class="mb-0">Smart Price Calculation System</p>
+
+            </div>
+
+            <!-- Card Body -->
+            <div class="card-body p-4 p-md-5">
+
+                <!-- Arithmetic Results -->
+                <h4 class="fw-bold text-primary mb-4">
+                    📊 Calculation Results
+                </h4>
+
+                <div class="alert alert-success rounded-3 shadow-sm">
+                    <h5 class="mb-0">➕ Addition</h5>
+                    <h1 id="add" class="fs-4 mt-2 mb-0"></h1>
+                </div>
+
+                <div class="alert alert-danger rounded-3 shadow-sm">
+                    <h5 class="mb-0">➖ Subtraction</h5>
+                    <h1 id="sub" class="fs-4 mt-2 mb-0"></h1>
+                </div>
+
+                <div class="alert alert-info rounded-3 shadow-sm">
+                    <h5 class="mb-0">✖️ Multiplication</h5>
+                    <h1 id="mult" class="fs-4 mt-2 mb-0"></h1>
+                </div>
+
+                <div class="alert alert-warning rounded-3 shadow-sm">
+                    <h5 class="mb-0">➗ Division</h5>
+                    <h1 id="div" class="fs-4 mt-2 mb-0"></h1>
+                </div>
+
+                <div class="alert alert-secondary rounded-3 shadow-sm">
+                    <h5 class="mb-0">％ Modulus</h5>
+                    <h1 id="mod" class="fs-4 mt-2 mb-0"></h1>
+                </div>
+
+                <hr class="my-4">
+
+                <!-- Price Section -->
+                <h4 class="fw-bold text-primary mb-4">
+                    💰 Price Calculation
+                </h4>
+
+                <div class="p-3 bg-primary-subtle rounded-3 mb-3">
+                    <h5 class="text-primary">Total Price</h5>
+                    <h1 id="total" class="fs-3 fw-bold mb-0"></h1>
+                </div>
+
+                <div class="p-3 bg-success-subtle rounded-3 mb-3">
+                    <h5 class="text-success">Discount</h5>
+                    <h1 id="dis" class="fs-3 fw-bold mb-0"></h1>
+                </div>
+
+                <div class="p-3 bg-dark text-white rounded-3">
+                    <h5>🇺🇸 USA Price</h5>
+                    <h1 id="USA" class="fs-3 fw-bold mb-0"></h1>
+                </div>
+
+            </div>
+
+            <!-- Footer -->
+            <div class="card-footer text-center bg-white py-3">
+                <p class="text-muted mb-0">
+                    © 2026 Smart Calculator | Made with Bootstrap
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="./calculator.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
